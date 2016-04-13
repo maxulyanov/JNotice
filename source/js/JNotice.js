@@ -3,8 +3,8 @@
  * 1.0.0
  *
  * By Max Ulyanov
- * Src: https://github.com/M-Ulyanov/JNotice
- * Example https://m-ulyanov.github.io/jnotice/
+ * Source: https://github.com/M-Ulyanov/JNotice
+ * Example http://m-ulyanov.github.io/JNotice/
  */
 
 
