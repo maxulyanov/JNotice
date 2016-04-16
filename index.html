@@ -2,11 +2,433 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>JNotice Example</title>
+  <title>Javascript notification</title>
   <link rel="stylesheet" href="source/styles/JNotice.css">
   <link rel="stylesheet" href="source/styles/JNotice-animate.css">
+  <link rel="stylesheet" href="example/paraiso-light.css">
+  <link rel="stylesheet" href="example/styles.css">
   <script src="source/js/JNotice.js"></script>
+  <script src="example/highlight.pack.js"></script>
+  <script src="example/init.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
+<body>
+<div class="header">
+  <h1>
+    <a href="https://github.com/M-Ulyanov/JNotice">JNotice - Javascript notification</a>
+  </h1>
 </div>
+<div class="content">
+
+  <div class="section">
+    <div class="section-title">Hot to add</div>
+    <div class="block-desc">
+      It may be an object or an array of objects
+    </div>
+
+    <div class="block">
+      <div class="block-title">Add notification</div>
+      <div class="code">
+<pre><code class="javascript">jnotice = new JNotice();
+jnotice.add([
+  {html: 'First notification', type: 'info', duration: 3000},
+  {html: 'Second notification', type: 'success', duration: 3000}
+]).call();
+
+// OR
+jnotice.add({html: 'First notification', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="hot-to-add" href="#">Run</a>
+    </div>
+
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Types</div>
+    <div class="block-desc">
+      Several predefined styles for notifications
+    </div>
+    <div class="block">
+      <div class="block-title">Default</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({html: 'Hello world JNotice!', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="default" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Info</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({html: 'Welcome to the site!', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="info" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Success</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({html: 'Successful sending', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="success" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Warning</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({html: 'Connection is not secure', type: 'warning', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="warning" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Error</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({html: 'Login failed!', type: 'error', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="error" href="#">Run</a>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Position</div>
+    <div class="block-desc">
+      6 positions to accommodate notice
+    </div>
+    <div class="block">
+      <div class="block-title">Left Top (default)</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+    position: {
+      x: 'left',
+      y: 'top'
+    }
+});
+jnotice.add({html: 'This position: Left top', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="left-top" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Center Top</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationHide: 'fadeOut',
+    position: {
+      x: 'center',
+      y: 'top'
+    }
+  });
+jnotice.add({html: 'This position: Center top', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="center-top" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Right Top</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationHide: 'bounceOutRight',
+    position: {
+      x: 'right',
+      y: 'top'
+    }
+  });
+jnotice.add({html: 'This position: Right top', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="right-top" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Left Bottom</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationHide: 'bounceOutLeft',
+    position: {
+      x: 'left',
+      y: 'bottom'
+    }
+  });
+jnotice.add({html: 'This position: Left Bottom', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="left-bottom" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Center Bottom</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationHide: 'fadeOut',
+    position: {
+      x: 'right',
+      y: 'bottom'
+    }
+  });
+jnotice.add({html: 'This position: Center Bottom', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="center-bottom" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Right Bottom</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationHide: 'bounceOutRight',
+    position: {
+      x: 'right',
+      y: 'bottom'
+    }
+  });
+jnotice.add({html: 'This position: Right Bottom', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="right-bottom" href="#">Run</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="section">
+    <div class="section-title">Animation</div>
+    <div class="block-desc">
+      5 animation options for show and 3 to hide
+    </div>
+
+    <div class="block">
+      <div class="block-title">bounceIn (default)</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationShow: 'bounceIn',
+  animationHide: 'bounceOutLeft',
+});
+jnotice.add({html: 'This animation show: bounceIn', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="bounceIn" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">bounceInLeft</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationShow: 'bounceInLeft',
+  animationHide: 'bounceOutLeft',
+});
+jnotice.add({html: 'This animation show: bounceInLeft', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="bounceInLeft" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">bounceInRight</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  position: {
+    x: 'right'
+  },
+  animationShow: 'bounceInRight',
+  animationHide: 'bounceOutRight',
+});
+  jnotice.add({html: 'This animation show: bounceInRight', type: 'info', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="bounceInRight" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">fadeIn</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  animationShow: 'fadeIn',
+  animationHide: 'fadeOut',
+});
+jnotice.add({html: 'This animation show: fadeIn', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="fadeIn" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">bounceInDown</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  position: {
+    x: 'center'
+  },
+  animationShow: 'bounceInDown',
+  animationHide: 'fadeOut',
+});
+jnotice.add({html: 'This animation show: bounceInDown', type: 'success', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="bounceInDown" href="#">Run</a>
+    </div>
+
+  </div>
+
+
+  <div class="section">
+    <div class="section-title"> Method Show</div>
+    <div class="block-desc">
+      Show the following message after you hide the current
+    </div>
+
+    <div class="block">
+      <div class="block-title">Queue</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  methodShow: 'queue',
+  });
+jnotice.add([
+  {html: 'First notification', type: 'info', duration: 3000},
+  {html: 'Second notification', type: 'success', duration: 3000},
+  {html: 'Third notification', type: 'warning', duration: 3000},
+  {html: 'Fourth notification', type: 'error', duration: 3000}
+]).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="method-show" href="#">Run</a>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="section-title">Save localStorage</div>
+    <div class="block-desc">
+      Save does not show the notification even when the browser is closed
+    </div>
+
+    <div class="block">
+      <div class="block-title"></div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  saveLocalStorage: true,
+});
+jnotice.add({html: 'I\'m from localStorage!', type: 'success', duration: 3000});
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="save-localstorage" href="#">Save localStorage</a>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="section-title">Remove</div>
+    <div class="block-desc">
+      Remove one or all notifications on click
+    </div>
+
+    <div class="block">
+      <div class="block-title">removeToClick</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  removeToClick: true,
+});
+jnotice.add({html: 'Click on me to hide', type: 'error', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="remove-to-click" href="#">Run</a>
+    </div>
+
+    <div class="block">
+      <div class="block-title">removeToClickAll</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice({
+  removeToClickAll: true,
+  animationHide: 'fadeOut',
+});
+jnotice.add({html: 'Click on me to hide all notification', type: 'error', duration: 3000}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="remove-to-click-all" href="#">Run</a>
+    </div>
+
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Events</div>
+    <div class="block-desc">
+      Events show or hide notification (open the console)
+    </div>
+
+    <div class="block">
+      <div class="block-title">Callbacks</div>
+      <div class="code">
+<pre><code class="javascript">var jnotice = new JNotice();
+jnotice.add({
+  html: 'Search for messages in the console',
+  type: 'info',
+  duration: 3000,
+  callbacks: {
+    show: function(event) {
+      console.log(event.type)
+    },
+    hide: function(event) {
+      console.info(event.type);
+      console.log('Hidden by user? ' + event.hideIsUser);
+    }
+  }
+}).call();
+</code>
+</pre>
+      </div>
+      <a class="button js-run" data-action="events" href="#">Run</a>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+<div class="footer">
+  <a href="https://github.com/M-Ulyanov/JNotice" class="button">Download</a>
+  <div class="iframe-wrapper">
+    <iframe src="https://ghbtns.com/github-btn.html?user=M-Ulyanov&amp;repo=JNotice&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+  </div>
+</div>
+
 </body>
 </html>
