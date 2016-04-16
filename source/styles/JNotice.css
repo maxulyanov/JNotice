@@ -38,8 +38,8 @@
   max-height: 0;
   padding: 0;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.7);
-  border: 0px solid #FFF;
+  background: rgba(0, 0, 0, 0.7);
+  border: 0px solid #000;
   border-radius: 3px;
   color: #FFF;
 }
