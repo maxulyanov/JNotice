@@ -1,6 +1,6 @@
 /*
  * JNotice: javascript notification in the browser
- * 1.0.0
+ * 1.0.1
  *
  * By Max Ulyanov
  * Source: https://github.com/M-Ulyanov/JNotice
