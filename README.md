@@ -1,5 +1,4 @@
 # JNotice
-==============
 javascript notification in the browser
 
 ##Getting started
