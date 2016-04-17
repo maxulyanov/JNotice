@@ -91,15 +91,15 @@ javascript notification in the browser
 </table>
 
 ##Public methods
-`add` - Add notification in storage. It may be an object or an array of objects.
-`call` - Call added notification
-`getStorage` - Get the current storage
-`clearStorage` - Clear the current storage
-`dismissAll` - Hide all shown now notification
-`destroy` - remove container and all notification
+`add` - Add notification in storage. It may be an object or an array of objects.<br>
+`call` - Call added notification<br>
+`getStorage` - Get the current storage<br>
+`clearStorage` - Clear the current storage<br>
+`dismissAll` - Hide all shown now notification<br>
+`destroy` - remove container and all notification<br>
 
 ##Events
-`show` - Moment show the notification
+`show` - Moment show the notification<br>
 `hide` - Moment hide the notification. event.hideIsUser - will help to identify hide user or system timer
 
 ##Browsers support
