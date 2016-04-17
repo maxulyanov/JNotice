@@ -1,5 +1,5 @@
 # JNotice
-javascript notification in the browser
+Great Javascript notification in the browser
 
 ##Getting started
 1. `npm install jnotice` your project or download arhive
