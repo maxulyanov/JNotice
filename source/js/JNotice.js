@@ -18,17 +18,17 @@
     function JNotice(userOptions) {
 
         var defaultOptions = {
-            methodShow: 'queue1',
-            removeToClick: true,
-            removeToClickAll: false,
-            saveLocalStorage: false,
+            methodShow: 'default',
             animationShow: 'bounceIn',
             animationHide: 'bounceOutLeft',
             position: {
-                x: 'left', // left center right
-                y: 'top' // top center bottom
+                x: 'left',
+                y: 'top'
             },
-            duration: 2000
+            duration: 2000,
+            saveLocalStorage: false,
+            removeToClick: true,
+            removeToClickAll: false
         };
 
         var storage = [];
