@@ -2,7 +2,6 @@
 ==============
 javascript notification in the browser
 
-
 ##Getting started
 1. `npm install jnotice` your project or download arhive
 2. Include JNotice.js, JNotice.css and JNotice-animate.css
