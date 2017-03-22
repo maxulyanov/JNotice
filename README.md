@@ -1,7 +1,7 @@
 # JNotice
 Great Javascript notification in the browser
 
-##Getting started
+## Getting started
 1. `npm install jnotice` your project or download arhive
 2. Include JNotice.js, JNotice.css and JNotice-animate.css
 3. Create instance JNotice with your options
@@ -15,7 +15,7 @@ Great Javascript notification in the browser
 </script>
 ```
 
-##Instance options
+## Instance options
 <table>
     <tr>
       <th>Name</td>
@@ -64,7 +64,7 @@ Great Javascript notification in the browser
    </tr>
 </table>
 
-##Notification object options
+## Notification object options
 <table>
     <tr>
       <th>Name</td>
@@ -88,7 +88,7 @@ Great Javascript notification in the browser
     </tr>
 </table>
 
-##Public methods
+## Public methods
 `add` - Add notification in storage. It may be an object or an array of objects.<br>
 `call` - Call added notification<br>
 `getStorage` - Get the current storage<br>
@@ -96,12 +96,12 @@ Great Javascript notification in the browser
 `dismissAll` - Hide all shown now notification<br>
 `destroy` - remove container and all notification<br>
 
-##Events
+## Events
 `show` - Moment show the notification<br>
 `hide` - Moment hide the notification. event.hideIsUser - will help to identify hide user or system timer
 
-##Browsers support
+## Browsers support
 Chrome, FF, Opera, Safari, IE9+
 
-##Example
+## Example
 See example - <a href="http://m-ulyanov.github.io/JNotice/">JNotice</a>
