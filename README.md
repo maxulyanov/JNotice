@@ -2,7 +2,7 @@
 Great Javascript notification in the browser
 
 ## Getting started
-1. `npm install jnotice` your project or download arhive
+1. `npm install jnotice` your project or download archive
 2. Include JNotice.js, JNotice.css and JNotice-animate.css
 3. Create instance JNotice with your options
 4. Add the object to the notification
