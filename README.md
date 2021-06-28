@@ -104,4 +104,4 @@ Great Javascript notification in the browser
 Chrome, FF, Opera, Safari, IE9+
 
 ## Example
-See example - <a href="http://m-ulyanov.github.io/JNotice/">JNotice</a>
+See example - <a href="http://maxulyanov.github.io/JNotice/">JNotice</a>
